@@ -1,8 +1,8 @@
+# Custom F1 score evaluation metric for LightGBM
+# Using the 'get.max_f1' function from the Laurae package
 
 library(Laurae)
 
-# Custom F1 score evaluation metric for LightGBM
-# Use the 'get.max_f1' function from the Laurae package
 F1_metric = function(preds,dtrain){
   
   labels = getinfo(dtrain,"label")
